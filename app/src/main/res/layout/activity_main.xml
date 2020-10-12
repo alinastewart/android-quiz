@@ -1,0 +1,161 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        tools:context=".MainActivity">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="16dp"
+            android:textSize="20sp"
+            android:textAllCaps="true"
+            android:textColor="@color/colorPrimaryDark"
+            android:text="Basic mathematics quiz" />
+
+        <EditText
+            android:id="@+id/name_field"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="16dp"
+            android:inputType="textCapWords"
+            android:hint="Student Name" />
+
+        <TextView
+            android:layout_marginBottom="6dp"
+            android:layout_height="wrap_content"
+            android:layout_width="wrap_content"
+            android:text="1. What numbers are greater than 4: "/>
+
+        <CheckBox
+            android:id="@+id/oneFive"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="6dp"
+            android:paddingLeft="2dp"
+            android:text="5" />
+
+        <CheckBox
+            android:id="@+id/oneSeven"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:paddingLeft="2dp"
+            android:layout_marginBottom="6dp"
+            android:text="7" />
+
+        <CheckBox
+            android:id="@+id/oneSix"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:paddingLeft="2dp"
+            android:layout_marginBottom="6dp"
+            android:text="6" />
+
+        <CheckBox
+            android:id="@+id/oneFour"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:paddingLeft="2dp"
+            android:layout_marginBottom="8dp"
+            android:text="4" />
+
+        <TextView
+            android:layout_height="wrap_content"
+            android:layout_width="wrap_content"
+            android:layout_marginBottom="6dp"
+            android:text="2. What numbers are less than half of 8: " />
+
+        <CheckBox
+            android:id="@+id/twoThree"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:paddingLeft="2dp"
+            android:layout_marginBottom="6dp"
+            android:text="3" />
+
+        <CheckBox
+            android:id="@+id/twoOne"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:paddingLeft="2dp"
+            android:layout_marginBottom="6dp"
+            android:text="1" />
+
+        <CheckBox
+            android:id="@+id/twoSeven"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:paddingLeft="2dp"
+            android:layout_marginBottom="6dp"
+            android:text="7" />
+
+        <CheckBox
+            android:id="@+id/twoFive"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:paddingLeft="2dp"
+            android:layout_marginBottom="8dp"
+            android:text="5" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="6dp"
+            android:text="3. Inch is longer than centimeter: " />
+        <RadioGroup
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/RGroup">
+                <RadioButton
+                    android:id="@+id/radio_true"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="6dp"
+                    android:text="true"
+                    android:onClick="onRadioButtonClicked"/>
+                <RadioButton
+                    android:id="@+id/radio_false"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="8dp"
+                    android:text="false"
+                    android:onClick="onRadioButtonClicked"/>
+        </RadioGroup>
+
+
+        <TextView
+            android:layout_height="wrap_content"
+            android:layout_width="wrap_content"
+            android:layout_marginBottom="6dp"
+            android:text="4. How do you call 10 cents?" />
+
+        <EditText
+            android:id="@+id/text_field"
+            android:layout_width="163dp"
+            android:layout_height="wrap_content"
+            android:inputType="textCapWords" />
+
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="16dp"
+            android:text="Submit Results"
+            android:onClick="calculateScore"/>
+
+        <TextView
+            android:id="@+id/score_summary_text_view"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="16sp"
+            android:textColor="@android:color/black"/>
+
+    </LinearLayout>
+</ScrollView>
